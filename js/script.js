@@ -1,36 +1,21 @@
 'use srtict';
 
-//alert('Hello World!');
-//const result = confirm('Are you here?');
-//console.log(result);
+let numbersOfFilm = +prompt('How many films have you watched?', '');
 
-// const answer = +prompt('Вам есть 18?', '');
+let personalMovieDB = {
+  count: numbersOfFilm,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false,
+};
 
-// console.log(answer + 5);
+let lastFilm = prompt('What was the last film?', ''),
+  rateOfFilm = +prompt('What is your rate?', ''),
+  lastFilm2 = prompt('What was the last film?', ''),
+  rateOfFilm2 = +prompt('What is your rate?', '');
 
-// const answers = [];
+personalMovieDB.movies[lastFilm] = rateOfFilm;
+personalMovieDB.movies[lastFilm2] = rateOfFilm2;
 
-// answers[0] = prompt('What is your name?', '');
-// answers[1] = prompt('What is your surname?', '');
-// answers[2] = prompt('What is your age?', '');
-// console.log(typeof answers);
-//document.write(answers);
-
-// const category = 'toys';
-
-// console.log(`https://someurl.com/${category}`);
-
-// let user = 'Oleg';
-// console.log(`Hello, ${user}!`);
-
-// let incr = 10,
-//   decr = 10;
-
-// incr++;
-// decr--;
-
-console.log(4 * 3 != 8);
-
-// const isChecked = false,
-//   isClosed = false;
-// console.log(isChecked || !isClosed);
+console.log(personalMovieDB);
